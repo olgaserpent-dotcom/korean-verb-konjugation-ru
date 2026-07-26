@@ -78,7 +78,7 @@ export function TrainingScreen({
             type="text"
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
-            disabled={!!feedback}
+            readOnly={!!feedback}
             placeholder="Введите форму глагола"
             autoComplete="off"
             autoCorrect="off"
