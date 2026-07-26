@@ -1,0 +1,35 @@
+:root {
+  --text: #3f3d45;
+  --text-h: #08060d;
+  --bg: #fafafa;
+  --border: #e0e0e5;
+  --card-bg: #ffffff;
+  --accent: #3b6bff;
+  --correct-bg: #e3f9e5;
+  --correct-border: #34c759;
+  --correct-text: #1e7e34;
+  --incorrect-bg: #fdecec;
+  --incorrect-border: #e5484d;
+  --incorrect-text: #b3261e;
+
+  font: 16px/145% system-ui, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic",
+    Roboto, sans-serif;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+}
