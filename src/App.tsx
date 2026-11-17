@@ -32,7 +32,7 @@ function App() {
   const [feedback, setFeedback] = useState<Feedback | null>(null);
 
   useEffect(() => {
-    fetch("/verbs.json")
+    fetch(`${import.meta.env.BASE_URL}verbs.json`)
       .then((res) => res.json())
       .then((data: Verb[]) => setVerbs(data));
   }, []);
