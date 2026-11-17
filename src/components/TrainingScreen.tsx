@@ -48,10 +48,13 @@ export function TrainingScreen({
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (feedback) {
+      inputRef.current?.blur();
       onNext();
       return;
     }
     if (answer.trim() === "") return;
+    inputRef.current?.blur();
+    inputRef.current?.focus();
     onSubmit(answer);
   }
 
